@@ -4,46 +4,45 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background:black;
 }
 .fundo{
-    background:black;
-    height:100vh;
+    
+    height:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 header{
-    width:65%; 
+    width:75%; 
+    
 }
 h1{
-    margin:0px;
     padding:5px;
-    background-color: rgb(0, 195, 255);
+    background-color: rgb(72, 197, 206);
     color:white;
     text-align: center;
     font-size:24px;
 }   
 
 main{
-    height:50%;
-    width:65%;
+    
+    width:75%;
+    padding: 20px;
     background-image: url(./images/people.jpg);
     background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center left ;
+    background-position:left;
     display:flex;
     justify-content: right;
+    box-sizing: border-box;
 }
 .conteudo{
-    margin:10px;
-    padding:10px;
+    padding:15px;
     width:250px;
-    height:400px;
-    background:rgba(243, 241, 241,.5);
+    background:rgba(255, 255, 255, 0.6);
     box-sizing: border-box;
 }
 h2{
-    padding:0px;
     margin-bottom:10px;
     font-size:16px;
 }
@@ -55,71 +54,62 @@ form{
     display: flex;
     flex-direction: column;
 }
-#nome{
-    padding:8px;
-    margin:3px;
+form input, select{
+    box-sizing:border-box;
+    width:100%;
+    margin-bottom:10px;
+    padding:10px;
+    border:none;
 }
-#email{
-    padding:8px;
-    margin:3px;
-}
-#estado{
-    padding:8px;
-    margin:3px;
-    height:34.52px;
+#estado{ 
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background-image:url(./images/arrow.jpg);
+    background-repeat:no-repeat;
+    background-position:calc(100% - 10px) center;
 }
 #botao{
-    padding:8px;
-    margin:3px;
-    background:rgb(0, 195, 255);
-    border-color:rgb(0, 195, 255)
+    color:white;
+    font-weight:bold;
+    background:rgb(72, 197, 206);
+   
 }
 
 footer{
-    width:65%;
-    height:30%;
+    padding:30px 20px;
+    width:75%;
     background-color:rgb(31, 30, 30);
     display:flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
-.img{
-    margin-left:5px;
-}
-.conteudo2{
-    margin-left:35px;
-    width:400px;
+.description{
+    margin-left:30px;
+    max-width:400px;
     height:100%;
     color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+   
 }
-.h2_footer{
-    margin:5px;
-    padding:0px;
+.description h2, p{
+    margin-bottom:15px;  
+    letter-spacing: .5px;
 }
-.p_footer{
-    width:100%;
-    margin:15px 0px 0px 0px;
-}
-
 @media screen and (max-width:600px){
 
     header{
-        width:75%;
+        width:80%;
     }
-    
     main{
-        width:75%;
-        height:50%;
+        width:80%;
+        justify-content: center;
     }
     footer{
-        width:75%;
-        height:35%;
+        width:80%;
     }
-    .conteudo2{
-        margin: 0px 5px 0px 35px
-    }
+    
 }
